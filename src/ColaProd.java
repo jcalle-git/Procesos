@@ -8,11 +8,13 @@ public class ColaProd {
     private PriorityQueue<Integer> colaDeCliente;
     private int tiempoTotal;
     private Semaphore sm;
+    String mal;
     
     public ColaProd() {
         sm=new Semaphore(1);
         this.tiempoTotal = 0;
         this.colaDeCliente=new PriorityQueue<Integer>();
+        this.mal="malala";
     }
 
     public int getTiempoTotal() {
